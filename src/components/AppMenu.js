@@ -5,7 +5,7 @@ const SubMenu = Menu.SubMenu;
 
 const menuData = [
   {
-    title: '票圈管理',
+    title: '票圈管理1',
     children: [{
       path: 'extend/1',
       title: 'test',
