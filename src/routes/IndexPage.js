@@ -5,11 +5,15 @@ import AppHeader from '../components/AppHeader';
 import AppMenu from '../components/AppMenu';
 import styles from './IndexPage.css';
 
-function IndexPage() {
+function IndexPage({ children }) {
   return (
     <div>
       <AppHeader />
-      <AppMenu />
+      <div className={styles.pageWrap}>
+        {
+          children
+        }
+      </div>
     </div>
   );
 }

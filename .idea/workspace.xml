@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23b7913-c27f-4c7d-8234-fd271da00aa9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/example.js" afterPath="$PROJECT_DIR$/src/models/example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/AppHeader.js" afterPath="$PROJECT_DIR$/src/components/AppHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/AppMenu.js" afterPath="$PROJECT_DIR$/src/components/AppMenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header.js" afterPath="$PROJECT_DIR$/src/components/Header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header.less" afterPath="$PROJECT_DIR$/src/components/Header.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/SiteLogo.js" afterPath="$PROJECT_DIR$/src/components/SiteLogo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/SiteLogo.less" afterPath="$PROJECT_DIR$/src/components/SiteLogo.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router.js" afterPath="$PROJECT_DIR$/src/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/IndexPage.css" afterPath="$PROJECT_DIR$/src/routes/IndexPage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/IndexPage.js" afterPath="$PROJECT_DIR$/src/routes/IndexPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/example.js" afterPath="$PROJECT_DIR$/src/services/example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/request.js" afterPath="$PROJECT_DIR$/src/utils/request.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,6 +36,7 @@
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <marker date="1522253002000" expanded="true" signature="388:400" ph="&lt;div/&gt;" />
               </folding>
             </state>
           </provider>
@@ -146,12 +159,12 @@
       <option name="presentableId" value="Default" />
       <updated>1522293769527</updated>
       <workItem from="1522293770654" duration="26000" />
-      <workItem from="1522294098637" duration="7000" />
+      <workItem from="1522294098637" duration="258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33000" />
+    <option name="totallyTimeSpent" value="284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1684" height="1026" extended-state="0" />
@@ -193,6 +206,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <marker date="1522253002000" expanded="true" signature="388:400" ph="&lt;div/&gt;" />
           </folding>
         </state>
       </provider>
@@ -221,6 +235,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <marker date="1522253002000" expanded="true" signature="388:400" ph="&lt;div/&gt;" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,47 @@
+.TabMenuWrap{
+  zoom: 1;
+  display: inline-block;
+  height: 100%;
+  padding-left: 100px;
+
+  >li{
+    width: 80px;
+    height: 100%;
+    float: left;
+
+    >a{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      text-align: center;
+      color: #ffffff;
+
+      >img{
+        position: absolute;
+        left: 50%;
+        margin-left: -13px;
+        top: 14px;
+      }
+
+      >span{
+        display: inline-block;
+        padding-top: 14px;
+      }
+    }
+    >a.active{
+      background: #ffffff;
+      color: #fe6900;
+    }
+  }
+
+  >li:hover{
+    background: #ffffff;
+    >a{
+      color: #fe6900;
+    }
+  }
+}
+
+
+.TabMenuWrap:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}

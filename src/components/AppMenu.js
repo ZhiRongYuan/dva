@@ -1,6 +1,58 @@
 import React from 'react';
 import { Menu, Icon } from 'antd';
+import { Link } from 'dva/router';
 const SubMenu = Menu.SubMenu;
+
+const menuData = [
+  {
+    title: '票圈管理',
+    children: [{
+      path: 'extend/1',
+      title: 'test',
+      key: '1dsg322'
+    }]
+  },
+  {
+    title: '活动管理',
+    children: [{
+      path: 'extend/2',
+      title: 'test',
+      key: '13dasfafg22'
+    }]
+  },
+  {
+    title: '优惠管理',
+    children: [{
+      path: 'extend/3',
+      title: 'test',
+      key: 'fasdsfaf'
+    }]
+  },
+  {
+    title: '投放管理',
+    children: [{
+      path: 'extend/4',
+      title: 'test',
+      key: '13fsdafa22'
+    }]
+  },
+  {
+    title: '消息中心',
+    children: [{
+      path: 'extend/5',
+      title: 'test',
+      key: '1322dsafsdfa'
+    }]
+  },
+  {
+    title: '意见反馈',
+    children: [{
+      path: 'extend/feedback',
+      title: '意见反馈',
+      key: '13222334sdakfjl'
+    }]
+  }
+]
 
 class AppMenu extends React.Component {
   // submenu keys of first level
@@ -24,28 +76,25 @@ class AppMenu extends React.Component {
         mode="inline"
         openKeys={this.state.openKeys}
         onOpenChange={this.onOpenChange}
-        style={{ width: 256 }}
+        style={{ width: 200, height: '100%', boxShadow: "2px 0 4px 0 rgba(0,0,0,0.15)", float: 'left' }}
       >
-        <SubMenu key="sub1" title={<span><Icon type="mail" /><span>Navigation One</span></span>}>
-          <Menu.Item key="1">Option 1</Menu.Item>
-          <Menu.Item key="2">Option 2</Menu.Item>
-          <Menu.Item key="3">Option 3</Menu.Item>
-          <Menu.Item key="4">Option 4</Menu.Item>
-        </SubMenu>
-        <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>Navigation Two</span></span>}>
-          <Menu.Item key="5">Option 5</Menu.Item>
-          <Menu.Item key="6">Option 6</Menu.Item>
-          <SubMenu key="sub3" title="Submenu">
-            <Menu.Item key="7">Option 7</Menu.Item>
-            <Menu.Item key="8">Option 8</Menu.Item>
-          </SubMenu>
-        </SubMenu>
-        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>Navigation Three</span></span>}>
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
-          <Menu.Item key="11">Option 11</Menu.Item>
-          <Menu.Item key="12">Option 12</Menu.Item>
-        </SubMenu>
+        {
+          menuData.map((item, index) => {
+            return (
+              <SubMenu key={index} title={item.title}>
+                {
+                  item.children.map((menuItem, menuIndex) => {
+                    return (
+                      <Menu.Item key={menuItem.key}>
+                        <Link to={menuItem.path}>{menuItem.title}</Link>
+                      </Menu.Item>
+                    );
+                  })
+                }
+              </SubMenu>
+            );
+          })
+        }
       </Menu>
     );
   }
